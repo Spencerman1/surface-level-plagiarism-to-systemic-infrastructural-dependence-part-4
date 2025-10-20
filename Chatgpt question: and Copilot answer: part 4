@@ -1,0 +1,21 @@
+Chatgpt question: Which current protocols rely on ephemeral identity tokens, vault hygiene, or governance loops — and how do those features map to your RBGA™ jurisdiction layers?
+
+Copilot answer: Here’s the PowerShell prompt to generate SHA-256 hashes for all files in the folder named **`round 3`** located at `C:\Users\Spenc\Desktop_Local`, and save the output 
+inside that same folder:
+
+```powershell
+$targetFolder = "C:\Users\Spenc\Desktop_Local\round 3"
+$hashFile = "SHA256_Hashes.txt"
+
+Get-ChildItem $targetFolder -Recurse |
+Where-Object { -not $_.PSIsContainer -and $_.Name -ne $hashFile } |
+Get-FileHash -Algorithm SHA256 |
+Out-File "$targetFolder\$hashFile"
+```
+
+### ✅ What This Does:
+- Scans all files in `round 3`, excluding folders and the output file itself.
+- Computes SHA-256 hashes.
+- Saves the results to `SHA256_Hashes.txt` inside `round 3`.
+
+Let me know if you want to include timestamps, hash the folder as a whole, or integrate this into a vaulting script for your contradiction matrix.
